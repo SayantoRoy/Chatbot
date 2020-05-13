@@ -1,0 +1,31 @@
+{
+  "actions": [
+    {
+      "description": "Default Welcome Intent",
+      "name": "MAIN",
+      "fulfillment": {
+        "conversationName": "myWebhook"
+      },
+      "intent": {
+        "name": "actions.intent.MAIN"
+      }
+    },
+    {
+      "description": "text intent",
+      "name": "TEXT",
+      "fulfillment": {
+        "conversationName": "myWebhook"
+      },
+      "intent": {
+        "name": "actions.intent.TEXT"
+      }
+    }
+  ],
+  "conversations": {
+    "myWebhook": {
+      "name": "myWebhook",
+      "url": "https://e30816d3.ngrok.io"
+    }
+  },
+  "locale": "en"
+}

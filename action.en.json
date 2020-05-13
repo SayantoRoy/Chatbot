@@ -1,0 +1,26 @@
+
+
+  {
+    "actions": [{
+     "description": "Default Welcome Intent",
+     "name": "MAIN",
+     "fulfillment": {
+      "conversationName": " Let's Have a Convo"
+     },
+     "intent": {
+      "name": "actions.intent.MAIN",
+      "trigger": {
+       "queryPatterns": [
+        "talk to Doki Doki"
+       ]
+      }
+     }
+    }],
+    "conversations": {
+     " MAIN_CONVERSATION": {
+      "name": "my",
+      "url": "http://localhost:8888 "
+     }
+    },
+    "locale": "en"
+   }
