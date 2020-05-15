@@ -9,7 +9,7 @@ const LUIS_URL = 'https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/f588
 const app = actionssdk({debug: true});
 
 app.intent('actions.intent.MAIN', (conv) => {
-  conv.ask('Hi!');
+  conv.ask('Hello There!!');
 });
 
 app.intent('actions.intent.TEXT', (conv, input) => {
@@ -41,11 +41,11 @@ app.intent('actions.intent.TEXT', (conv, input) => {
 });
 
 function nameIntent(conv) {
-  conv.ask('My name is Lola test and I like talking.');
+  conv.ask('My name is Doki and I simply talk.');
 } 
 
 function helpIntent(conv) {
-  conv.ask('I like when you can ask for my name.');
+  conv.ask('Do you know my name?');
 }
 
 express().use(bodyParser.json(), app).listen(8888);
